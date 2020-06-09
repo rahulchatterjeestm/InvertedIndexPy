@@ -21,7 +21,7 @@ class InvertedIndex:
             appearances[term] = Appearance(document['id'], freq + 1)
         updateDict = {key: [appearance] if key not in self.index else self.index[key] + [appearance] for (key,appearance) in appearances.items()}
         self.index.update(updateDict)
-        self.db.add(document)
+        self.db.Add(document)
         return document
 
     def LookUp(self, query):

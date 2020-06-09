@@ -1,3 +1,4 @@
 #for making the Classes folder as module
-from Classes.Appearance import *
-from Classes.Database import *
+from .Appearance import Appearance
+from .Database import Database
+from .InvertedIndex import InvertedIndex
